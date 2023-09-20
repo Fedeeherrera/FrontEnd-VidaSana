@@ -1,0 +1,39 @@
+/* */
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.li {
+    border: 1px solid black;
+    margin: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+}
+
+.button {
+    margin: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button.eliminar {
+    background-color: red;
+}
+
+.button.editar {
+    background-color: skyblue
+}

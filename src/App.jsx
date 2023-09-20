@@ -1,10 +1,11 @@
-import Personas from './components/Personas'
+import Donaciones from './Donaciones/Donaciones'
+import './App.css'
 
 function App() {
   return (
     <>
-      <h1>Hola Mundo Desde React</h1>
-      <Personas />
+      <h1 className='titulo'>VIDA SANA API</h1>
+      <Donaciones />
     </>
   )
 }
