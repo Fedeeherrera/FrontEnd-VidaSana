@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <h1 className='titulo'>VIDA SANA API</h1>
+      <h1 className='titulo'>VIDA NATURAL API</h1>
       <Donaciones />
     </>
   )

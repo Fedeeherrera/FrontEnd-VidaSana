@@ -1,8 +1,23 @@
-# React + Vite
+# Vida Sana
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Somos una ONG comprometida en abordar desafíos como la contaminación, el cambio climático, la escasez de agua y el calentamiento global. Tu donación es vital para nuestras iniciativas que protegen nuestro planeta y promueven un futuro más saludable. ¡Únete a nosotros para marcar la diferencia!"
 
-Currently, two official plugins are available:
+### Commands
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Vida Sana API
+
+#### Get all items
+
+```http
+  GET /personas
+```
+
+#### Get item
+
+```http
+  GET /personas/${id}
+```
+
+| Parameter | Type     | Description  |
+| :-------- | :------- | :----------- |
+| `ID`      | `Number` | **Required** |
