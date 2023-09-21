@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import Imagenn from './Imagenn'
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 import './Donaciones.css'
+import Form from './Form'
 
 function Donaciones() {
   const URL = 'http://localhost:3030/personas'
@@ -27,8 +30,22 @@ function Donaciones() {
         if (response.status === 200) {
           // Eliminación exitosa, actualiza los datos
           fetchData()
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Persona eliminada correctamente',
+            showConfirmButton: false,
+            timer: 1000,
+          })
         } else {
           console.error('Error al eliminar persona.')
+          Swal.fire({
+            position: 'top-end',
+            icon: 'Error',
+            title: 'Error al eliminar Persona',
+            showConfirmButton: false,
+            timer: 1000,
+          })
           console.log(response.status)
         }
       })
@@ -53,23 +70,27 @@ function Donaciones() {
   }
 
   return (
-    <div className='container'>
+    <div className="container">
+      <Form/>
       <ul className="ul">
         {data.map((persona) => (
-          <li className="li " key={persona.id}>
+          <li className="card" key={persona.id}>
             <Imagenn />
             <h2 className="h2">{persona.nombreApellido}</h2>
             <h3 className="h3">${persona.donacion}</h3>
             <h4 className="h4">{persona.mensaje}</h4>
             <div>
               <button
+                className="button editar"
+                onClick={() => handleEditClick(persona.id)}
+              >
+                Editar
+              </button>
+              <button
                 className="button eliminar"
                 onClick={() => handleDeleteClick(persona.id)}
               >
                 Eliminar
-              </button>
-              <button className="button editar" onClick={() => handleEditClick(persona.id)}>
-                Editar
               </button>
             </div>
           </li>
