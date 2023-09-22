@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import Imagenn from './Imagenn'
+import Form from './Form'
+import './Donaciones.css'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
-import './Donaciones.css'
-import Form from './Form'
 
 function Donaciones() {
   const URL = 'http://localhost:3030/personas'
@@ -71,7 +71,7 @@ function Donaciones() {
 
   return (
     <div className="container">
-      <Form/>
+      <Form className='form'/>
       <ul className="ul">
         {data.map((persona) => (
           <li className="card" key={persona.id}>
