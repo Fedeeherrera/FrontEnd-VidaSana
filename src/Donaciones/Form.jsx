@@ -1,4 +1,4 @@
-function Form() {
+function Form () {
   return (
     <form className="form">
       <div className="div_nombre_donacion">

@@ -5,6 +5,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #679683;
 }
 
 /*Estilos Form*/
@@ -31,8 +32,10 @@
 }
 
 .submit {
-    margin-bottom: 20px;
-    background-color: #5CB85C;
+  margin-bottom: 20px;
+  background-color: #4f565e;
+  border: 1px solid black;
+
 }
 
 /*Estilos Lista*/
@@ -54,6 +57,11 @@ ul {
   width: 200px;
   height: 550px;
   text-align: center;
+  background-color: #4f565e;
+}
+
+.h1__donaciones {
+  text-align: center;
 }
 
 .button {
@@ -64,8 +72,14 @@ ul {
 
 .button.eliminar {
   background-color: red;
+  color: black;
+  border: 2px solid black;
+
 }
 
 .button.editar {
-  background-color: skyblue;
+  background-color: #C0D7BB;
+  color: black;
+  border: 2px solid black;
+
 }
