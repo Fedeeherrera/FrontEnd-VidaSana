@@ -41,3 +41,5 @@ Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con noso
 - **Redes Sociales**: Síguenos en [Facebook](https://www.facebook.com/VidaSana) y [Twitter](https://twitter.com/VidaSana)
 
 ¡Gracias por unirte a Vida Sana en nuestra misión de crear un mundo más limpio y saludable!
+
+### PALETA DE COLORES : https://coolors.co/2f4b26-3e885b-85bda6-bedcfe-c0d7bb
