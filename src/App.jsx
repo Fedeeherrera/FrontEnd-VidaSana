@@ -8,7 +8,6 @@ import './App.css'
 function App () {
   return (
     <>
-      <h1 className='titulo'>BIENVENIDO A VIDA SANA</h1>
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/home' element={<Home />} />
