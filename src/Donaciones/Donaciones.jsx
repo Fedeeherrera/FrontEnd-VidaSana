@@ -35,7 +35,7 @@ function Donaciones () {
             icon: 'success',
             title: 'Persona eliminada correctamente',
             showConfirmButton: false,
-            timer: 1000
+            timer: 1200
           })
         } else {
           console.error('Error al eliminar persona.')
@@ -44,7 +44,7 @@ function Donaciones () {
             icon: 'Error',
             title: 'Error al eliminar Persona',
             showConfirmButton: false,
-            timer: 1000
+            timer: 1200
           })
           console.log(response.status)
         }

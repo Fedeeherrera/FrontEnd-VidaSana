@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 
 function Form () {
   const [formData, setFormData] = useState({
@@ -17,7 +19,6 @@ function Form () {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-
     try {
       const response = await fetch('http://localhost:3030/personas', {
         method: 'POST',
@@ -30,12 +31,26 @@ function Form () {
       if (response.status === 201) {
         // Persona creada correctamente, puedes mostrar una notificación o hacer algo más
         console.log('Persona creada correctamente')
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Persona creada correctamente',
+          showConfirmButton: false,
+          timer: 1200
+        })
       } else {
         // Manejar errores aquí, por ejemplo, mostrar un mensaje de error al usuario
         console.error('Error al crear persona.')
       }
     } catch (error) {
       console.error('Error al crear persona:', error)
+      Swal.fire({
+        position: 'top-end',
+        icon: 'Error',
+        title: 'Error al crear Persona',
+        showConfirmButton: false,
+        timer: 1200
+      })
     }
   }
 
