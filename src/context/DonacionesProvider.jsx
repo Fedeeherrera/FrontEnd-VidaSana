@@ -1,14 +1,18 @@
-import { useState, createContext, useEffect } from 'react'
+import { createContext } from 'react'
 
 const DonacionesContext = createContext()
 
 const DonacionesProvider = ({ children }) => {
   return (
-        <DonacionesContext.Provider
-          value={{
-          }}
-        >
-          {children}
-        </DonacionesContext.Provider>
+    <DonacionesContext.Provider
+      value={{
+      }}
+    >
+      {children}
+    </DonacionesContext.Provider>
   )
 }
+
+export { DonacionesProvider }
+
+export default { DonacionesContext }
