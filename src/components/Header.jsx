@@ -1,6 +1,6 @@
 import './Header.css'
 
-function Header() {
+function Header () {
   return <h1>Header</h1>
 }
 
