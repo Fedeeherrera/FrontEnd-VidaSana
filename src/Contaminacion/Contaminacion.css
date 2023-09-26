@@ -1,0 +1,41 @@
+
+.informacion {
+    background-color: #85bda6;
+    padding: 20px;
+  }
+  
+  .titulo-principal {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #2f4b26; 
+    padding: 10px; 
+  }
+  
+  .subtitulo {
+    font-size: 24px;
+    color: #2f4b26;
+  }
+  
+  .imagen-container {
+    text-align: center;
+  }
+  
+  .imagen-problema {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .descripcion,
+  .p_desforestacion {
+    text-align: justify;
+    color: #000;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #bedcfe;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
