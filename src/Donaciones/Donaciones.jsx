@@ -53,7 +53,7 @@ function Donaciones () {
   }
 
   const handleEditClick = (id) => {
-    // Enviar la solicitud de eliminación al servidor
+    // Enviar la solicitud de edicion al servidor
     fetch(`http://localhost:3030/personas/${id}`, {
       method: 'PUT'
     })
@@ -72,7 +72,8 @@ function Donaciones () {
   return (
     <div className="container">
       <h1 className='h1__donaciones'>Donaciones</h1>
-      <Form className='form'/>
+      <Form className="form" />
+
       <ul className="ul">
         {data.map((persona) => (
           <li className="card" key={persona.id}>
