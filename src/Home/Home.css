@@ -1,0 +1,27 @@
+.home {
+    background-color: #2f4b26; /* Color de fondo principal */
+    color: #fff; /* Color de texto principal */
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    background-color: #3e885b; /* Color de fondo para la sección de información */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .achievements-container {
+    background-color: #85bda6; /* Color de fondo para el contenedor de logros */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+
+
+
