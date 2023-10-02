@@ -23,7 +23,7 @@ const Home = () => {
 
       <div className="logros-contenidos">
         <LogrosContenidos
-          title="Mas Arboles, MAS Oxigeno"
+          title="Más Arboles, MÁS OXIGENO"
           description="Logramos plantar mas de 2000 arboles en montes deforestados"
           imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhQI04uKUePycw7ZChbiJ2S4ddN7MvGMdww&usqp=CAU"
         />

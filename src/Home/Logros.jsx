@@ -10,5 +10,6 @@ const LogrosContenidos = ({ title, description, imageUrl }) => {
   );
 };
 
-export default Logros.jsx;
+export default LogrosContenidos;
+
 
