@@ -1,6 +1,6 @@
 import React from 'react';
-import Logros from './Logros';
 import './Home.css'; 
+import './Logros';
 
 const Home = () => {
   return (
