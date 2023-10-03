@@ -1,7 +1,13 @@
 import './Header.css'
 
-function Header () {
-  return <h1>Header</h1>
+import React from 'react';
+
+function Header() {
+  return (
+    <header>
+      <h1>Problemas Ambientales</h1>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
