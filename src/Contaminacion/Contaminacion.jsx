@@ -10,13 +10,29 @@ function Contaminacion () {
       <ul>
         <li className="problema">
           <h2 className="subtitulo">Cambio Climático</h2>
-           <div>
+          <Carousel autoPlay={true} interval={5000} showThumbs={false}>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJ1NhBbtMln5frLNhl-Jxjnlo9jt7LrHoRA&usqp=CAU"
+                alt="Cambio Climático"
+                className="imagen-problema"
+              />
+            </div>
+            <div>
+              <img
+                src="https://www.argentina.gob.ar/sites/default/files/image001_1.jpg"
+                alt="Cambio Climático"
+                className="imagen-problema"
+              />
+            </div>
+            <div>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZf1bwcuw9Dcutu-aKjY5vMGlMEmd6jH9sjw&usqp=CAU"
                 alt="Cambio Climático"
                 className="imagen-problema"
               />
             </div>          
+          </Carousel>
           <p className="descripcion">
             El cambio climático se refiere a una variación significativa en los componentes del clima cuando se comparan períodos prolongados, pudiendo ser décadas o más. Por ejemplo, la temperatura media de la década del 50 con respecto a la temperatura media de la década del 90.
 
