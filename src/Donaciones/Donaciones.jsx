@@ -35,7 +35,7 @@ function Donaciones () {
             icon: 'success',
             title: 'Persona eliminada correctamente',
             showConfirmButton: false,
-            timer: 1000
+            timer: 1200
           })
         } else {
           console.error('Error al eliminar persona.')
@@ -44,7 +44,7 @@ function Donaciones () {
             icon: 'Error',
             title: 'Error al eliminar Persona',
             showConfirmButton: false,
-            timer: 1000
+            timer: 1200
           })
           console.log(response.status)
         }
@@ -53,7 +53,7 @@ function Donaciones () {
   }
 
   const handleEditClick = (id) => {
-    // Enviar la solicitud de eliminación al servidor
+    // Enviar la solicitud de edicion al servidor
     fetch(`http://localhost:3030/personas/${id}`, {
       method: 'PUT'
     })
@@ -72,7 +72,8 @@ function Donaciones () {
   return (
     <div className="container">
       <h1 className='h1__donaciones'>Donaciones</h1>
-      <Form className='form'/>
+      <Form className="form" />
+
       <ul className="ul">
         {data.map((persona) => (
           <li className="card" key={persona.id}>
