@@ -10,8 +10,6 @@ const LogrosContenidos = ({ title, description, imageUrl }) => {
   );
 };
 
-
-
 export default LogrosContenidos;
 
 
