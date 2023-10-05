@@ -1,7 +1,7 @@
-import './Header.css';
-import React from 'react';
+import './Header.css'
+import React from 'react'
 function MiHeader () {
-  return(
+  return (
     <div className="header">
       <div className="container">
         <a href="" className="logo"><img src="./Logos/LogoVidaNatural.png" alt="" />Vida Natural</a>
@@ -14,10 +14,9 @@ function MiHeader () {
           <li><a href="http://localhost:5173/Donaciones">Donaciones</a></li>
           <li><a href="#">Sobre Nosotros</a></li>
         </ul>
-      </div>     
+      </div>
     </div>
 
-  ) 
+  )
 }
 export default MiHeader
-
