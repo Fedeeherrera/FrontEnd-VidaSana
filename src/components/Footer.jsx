@@ -1,6 +1,5 @@
-import React from 'react';
-import './Footer.css';
-
+import React from 'react'
+import './Footer.css'
 
 function MiFooter () {
   return (
@@ -24,7 +23,7 @@ function MiFooter () {
       <h2>SIGUENOS</h2>
       <div className="redesSociales">
         <a href=""><img src="./Logos/Facebook.png" alt="Fb" /></a>
-        <a href="#"><img src="" alt="Ig" /></a> 
+        <a href="#"><img src="" alt="Ig" /></a>
         <a href="#"><img src="" alt="Tw" /></a>
         <a href="#"><img src="" alt="Yb" /></a>
       </div>
