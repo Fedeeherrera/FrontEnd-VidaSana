@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './Home.css'; 
 import LogrosContenidos from './Logros.jsx';
@@ -64,3 +65,21 @@ export default Home;
 
 
 
+=======
+import React from "react";
+import MiHeader from "../components/Header";
+import MiFooter from "../components/Footer";
+
+function Home () {
+    return (
+          <div>
+            <MiHeader/>
+              <h1>Home</h1>
+            <MiFooter/>
+          </div>
+    )
+  }
+  
+  export default Home
+  
+>>>>>>> 97e3ee91ee4aaa8032b2c546e90bd688d798e6c2

@@ -21,7 +21,7 @@ function Imagenn () {
     <div>
       {picture
         ? (
-        <img src={picture} alt="Imagen de usuario" />
+        <img className='imagen' src={picture} alt="Imagen de usuario" />
           )
         : (
         <p>Cargando imagen...</p>
