@@ -23,21 +23,21 @@ function Home() {
   <div className="logros-contenidos">
   <div className='card-contenido'>
   <LogrosContenidos
-    imageUrl='https://img.remediosdigitales.com/bb6830/image/450_1000.jpg'
+    imageUrl='https://www.fundacionaquae.org/wp-content/uploads/2016/04/Infograf%C3%ADa-Los-%C3%81rboles-e1567688449328.jpg'
     title= "Más árboles, más oxigeno"
     description="Logramos plantar mas de 2000 árboles en montes deforestados"
   />
   </div>
   <div className='card-contenido'>
    <LogrosContenidos
-    imageUrl='https://www.google.com/url?sa=i&url=https%3A%2F%2Fmide.gob.do%2Finicia-playas-limpias-y-bosques-vivos-campana-del-cesac-en-apoyo-al-proyecto-protegiendo-nuestro-futuro-de-adeofa%2F&psig=AOvVaw0aXAsMszX6wKFdDAQsah_a&ust=1696554325583000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPi_0MTb3YEDFQAAAAAdAAAAABAI'
+    imageUrl='https://www.vidasostenible.org/wp-content/uploads/2019/11/PlayasLimpias2.jpg'
     title= "Playas Limpias"
     description="Junto a Voluntarios logramos limpiar km de playas"
   />
  </div>
   <div className='card-contenido'>
   <LogrosContenidos
-   imageUrl='https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdnproxy.turadioinfo.com%2F251644%2Fnoticias%2Fa251bd3b114b3749f6377efb72481405.jpg&tbnid=j39qxgkzsv1fdM&vet=12ahUKEwjQ8MGi2t2BAxU5JLkGHa8dBuEQMyghegUIARCYAQ..i&imgrefurl=https%3A%2F%2Flaboulaye.info%2Fnoticias%2Fid-9406_CAMPA-A-DEL-CUIDADO-DEL-AGUA-EN-LAS-ESCUELAS&docid=E4QPRNZXooxpGM&w=720&h=456&itg=1&q=campa%C3%B1a%20sobre%20el%20agua%20en%20escuelas&ved=2ahUKEwjQ8MGi2t2BAxU5JLkGHa8dBuEQMyghegUIARCYAQ'
+   imageUrl='https://www.junin.gob.ar/sites/default/files/noticias/charla_medio_ambiente_en_colegio_san_jose_2.jpg'
    title="Cuidemos el Agua"
    description="Campaña de Concientización: Charlas en escuelas "
   />
