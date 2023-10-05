@@ -1,5 +1,8 @@
 import React from 'react';
 import './Contaminacion.css';
+import React from 'react'
+import './Contaminacion.css'
+
 
 function Contaminacion () {
   return (
@@ -31,7 +34,7 @@ function Contaminacion () {
                 alt="Cambio Climático"
                 className="imagen-problema"
               />
-            </div>          
+            </div>
           </Carousel>
           <p className="descripcion">
             El cambio climático se refiere a una variación significativa en los componentes del clima cuando se comparan períodos prolongados, pudiendo ser décadas o más. Por ejemplo, la temperatura media de la década del 50 con respecto a la temperatura media de la década del 90.
