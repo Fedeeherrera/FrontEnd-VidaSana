@@ -1,6 +1,6 @@
 import './Header.css'
 import React from 'react'
-function MiHeader () {
+function Header () {
   return (
     <div className="header">
       <div className="container">
@@ -19,4 +19,4 @@ function MiHeader () {
 
   )
 }
-export default MiHeader
+export default Header
