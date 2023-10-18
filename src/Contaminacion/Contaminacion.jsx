@@ -1,9 +1,12 @@
 import React from 'react';
 import './Contaminacion.css';
+import MiHeader from '../components/Header';
+import MiFooter from '../components/Footer';
 
 function Contaminacion () {
   return (
     <div className="informacion">
+      <MiHeader/>
       <div className="titulo-principal">
         <h1>Problemas Ambientales Urgentes</h1>
       </div>
@@ -52,6 +55,7 @@ function Contaminacion () {
           </p>
         </li>
       </ul>
+      <MiFooter/>
     </div>
   )
 }
