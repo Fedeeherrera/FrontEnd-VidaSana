@@ -1,3 +1,4 @@
+//import { NavLink } from 'react-router-dom';
 import './Header.css'
 import React from 'react'
 function Header () {
@@ -9,10 +10,11 @@ function Header () {
 
       <div className="navegacion">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="http://localhost:5173/Home">Home</a></li>
           <li><a href="http://localhost:5173/Contaminacion">Contaminacion</a></li>
           <li><a href="http://localhost:5173/Donaciones">Donaciones</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="http://localhost:5173/Login">Login</a></li>
+          
         </ul>
       </div>
     </div>
