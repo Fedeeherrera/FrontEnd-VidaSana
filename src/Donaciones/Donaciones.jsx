@@ -8,6 +8,7 @@ import 'sweetalert2/src/sweetalert2.scss'
 function Donaciones () {
   const URL = 'http://localhost:3030/personas'
   const [data, setData] = useState([])
+  const [editingId, setEditingId] = useState(null)
 
   const fetchData = () => {
     fetch(URL)
@@ -53,27 +54,52 @@ function Donaciones () {
   }
 
   const handleEditClick = (id) => {
-    // Enviar la solicitud de edicion al servidor
-    fetch(`http://localhost:3030/personas/${id}`, {
-      method: 'PUT'
-    })
-      .then((response) => {
-        if (response.status === 204) {
-          // Edit exitoso, actualiza los datos
-          fetchData()
-        } else {
-          console.error('Error al editar persona.')
-          console.log(response.status)
-        }
+    // Buscar la persona a editar en los datos actuales
+    const personaToEdit = data.find((persona) => persona.id === id)
+
+    if (personaToEdit) {
+      // Establecer los datos de la persona a editar en el formulario
+      setEditingId(id)
+      // Esto permitirá que el formulario se rellene con los datos de la persona a editar
+    } else {
+      console.error('Persona no encontrada para editar.')
+    }
+  }
+
+  // Función para actualizar la persona
+  const handleUpdatePerson = async (updatedPerson) => {
+    try {
+      const response = await fetch(`http://localhost:3030/personas/${editingId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(updatedPerson)
       })
-      .catch((error) => console.error('Error al eliminar persona:', error))
+
+      if (response.status === 204) {
+        // Actualización exitosa, limpiar el estado de edición y actualizar los datos
+        setEditingId(null)
+        fetchData()
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Persona actualizada correctamente',
+          showConfirmButton: false,
+          timer: 1200
+        })
+      } else {
+        console.error('Error al editar persona.')
+      }
+    } catch (error) {
+      console.error('Error al editar persona:', error)
+    }
   }
 
   return (
     <div className="container">
       <h1 className='h1__donaciones'>Donaciones</h1>
-      <Form className="form" />
-
+      <Form className="form" updatePerson={handleUpdatePerson} editingId={editingId} />
       <ul className="ul">
         {data.map((persona) => (
           <li className="card" key={persona.id}>
