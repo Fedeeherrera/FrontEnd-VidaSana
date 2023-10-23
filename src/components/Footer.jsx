@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 
-function MiFooter () {
+function Footer () {
   return (
     <footer className="piePagina">
 
@@ -36,4 +36,4 @@ function MiFooter () {
     </footer>
   )
 }
-export default MiFooter
+export default Footer
