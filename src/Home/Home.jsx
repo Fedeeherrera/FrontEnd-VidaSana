@@ -2,11 +2,14 @@ import React from 'react'
 import './Home.css'
 import LogrosContenidos from './Logros.jsx'
 
+
 function Home () {
   return (
     <div className="home">
+      
       <div className="info">
         <h1 className="title">ONG Vida Natural</h1>
+        
         <p>
           Nuestra ONG "Vida Natural" es una entidad civil fundada el 29 de junio de 2010, que trabaja en la solución de los principales problemas ambientales de Argentina. Nuestra misión es "proponer e implementar soluciones para conservar la naturaleza, promover el uso sustentable de los recursos naturales y una conducta responsable del hombre en un contexto de cambio climático". Para esto, desarrollamos acciones basadas en la protección de áreas naturales, el consumo y la producción responsable, la legislación ambiental y la concientización y educación ambiental.
         </p>
@@ -57,7 +60,9 @@ function Home () {
           />
         </div>
       </div>
+        
     </div>
+    
   )
 };
 export default Home
