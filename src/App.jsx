@@ -16,11 +16,14 @@ function App() {
 
         <Routes>
 
-          <Route path='/' element={<Login />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/contaminacion' element={<Contaminacion />} />
-          <Route path='/donaciones' element={<Donaciones />} />
+          <Route path='/Home' element={<Home />} />
+          <Route path='/Login' element={<Login />} />
+          <Route path='/Contaminacion' element={<Contaminacion />} />
+          <Route path='/Donaciones' element={<Donaciones />} />
+          
         </Routes>
+
+
         <Footer/>
       </BrowserRouter> 
     </>

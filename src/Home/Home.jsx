@@ -26,9 +26,9 @@ function Home () {
       <div className="logros-contenidos">
         <div className='card-contenido'>
           <LogrosContenidos
-            imageUrl='https://www.fundacionaquae.org/wp-content/uploads/2016/04/Infograf%C3%ADa-Los-%C3%81rboles-e1567688449328.jpg'
+            imageUrl='https://wallpapercave.com/wp/wp7532100.jpg'
             title="Más árboles, más oxigeno"
-            description="Logramos plantar mas de 2000 árboles en montes deforestados"
+            description="Logramos reforestar con más de 2000 nuevos árboles"
           />
         </div>
         <div className='card-contenido'>
