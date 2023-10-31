@@ -58,23 +58,14 @@
 .card-contenido img {
   display: flex;
   flex-wrap: wrap;
-  width: auto;
+  width: 90%;
   height: auto;
   border-radius:  10px ;
-  max-width: 60vh;
-  max-height: 70vh;
+  margin: 10px;;
+  max-height: 50vh;
 }
-/*h2 del componente logros*/
-/*.card-contenido image{
 
-}
-.card-contenido h2 {
-  font-size: 1,5em;
-  text-align: center;
-  border: solid 2px white;
-  border-radius: 10px;
-  width: 30vw;
-}
+
 /*p del componente logros*/
 .card-contenido p {
   font-size: 1em;
@@ -87,17 +78,18 @@
       width: 60vw;
       height: 70vh;
   }
+  /*h2 del componente logros*/
+
   .card-contenido h2 {
       font-size: 1em;
       text-align: center;
-      border: solid 2px white;
-      border-radius: 10px;
-      width: 50vw;
-      align-items: center;
+      
+  }
+  .card-contenido img{
+    width: 90%;
   }
 }
- /* .card-contenido img {
-      /*width: 20vw;
+ 
   
 
 
