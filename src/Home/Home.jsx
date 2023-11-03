@@ -2,11 +2,14 @@ import React from 'react'
 import './Home.css'
 import LogrosContenidos from './Logros.jsx'
 
+
 function Home () {
   return (
     <div className="home">
+      
       <div className="info">
         <h1 className="title">ONG Vida Natural</h1>
+        
         <p>
           Nuestra ONG "Vida Natural" es una entidad civil fundada el 29 de junio de 2010, que trabaja en la solución de los principales problemas ambientales de Argentina. Nuestra misión es "proponer e implementar soluciones para conservar la naturaleza, promover el uso sustentable de los recursos naturales y una conducta responsable del hombre en un contexto de cambio climático". Para esto, desarrollamos acciones basadas en la protección de áreas naturales, el consumo y la producción responsable, la legislación ambiental y la concientización y educación ambiental.
         </p>
@@ -23,9 +26,9 @@ function Home () {
       <div className="logros-contenidos">
         <div className='card-contenido'>
           <LogrosContenidos
-            imageUrl='https://www.fundacionaquae.org/wp-content/uploads/2016/04/Infograf%C3%ADa-Los-%C3%81rboles-e1567688449328.jpg'
+            imageUrl='https://wallpapercave.com/wp/wp7532100.jpg'
             title="Más árboles, más oxigeno"
-            description="Logramos plantar mas de 2000 árboles en montes deforestados"
+            description="Logramos reforestar con más de 2000 nuevos árboles"
           />
         </div>
         <div className='card-contenido'>
@@ -57,7 +60,9 @@ function Home () {
           />
         </div>
       </div>
+        
     </div>
+    
   )
 };
 export default Home

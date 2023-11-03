@@ -1,13 +1,38 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
-function Form () {
+function Form ({ updatePerson, editingId }) {
   const [formData, setFormData] = useState({
     nombreApellido: '',
     donacion: '',
     mensaje: ''
   })
+
+  const [isEditing, setIsEditing] = useState(false)
+
+  useEffect(() => {
+    if (editingId !== null) {
+      setIsEditing(true)
+      // Obtener los datos de la persona que se está editando
+      // y llenar el formulario con esos datos
+      fetch(`http://localhost:3030/personas/${editingId}`)
+        .then(response => response.json())
+        .then(data => {
+          setFormData(data)
+        })
+        .catch(error => {
+          console.error('Error al obtener datos de la persona a editar:', error)
+        })
+    } else {
+      setIsEditing(false)
+      setFormData({
+        nombreApellido: '',
+        donacion: '',
+        mensaje: ''
+      })
+    }
+  }, [editingId])
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -19,38 +44,37 @@ function Form () {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    try {
-      const response = await fetch('http://localhost:3030/personas', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
-
-      if (response.status === 201) {
-        // Persona creada correctamente, puedes mostrar una notificación o hacer algo más
-        console.log('Persona creada correctamente')
-        Swal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'Persona creada correctamente',
-          showConfirmButton: false,
-          timer: 1200
+    if (isEditing) {
+      // Si estamos en modo de edición, llamamos a la función de actualización
+      updatePerson(formData)
+    } else {
+      // Si no estamos en modo de edición, agregamos una nueva persona
+      try {
+        const response = await fetch('http://localhost:3030/personas', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
         })
-      } else {
-        // Manejar errores aquí, por ejemplo, mostrar un mensaje de error al usuario
-        console.error('Error al crear persona.')
+
+        if (response.status === 201) {
+          // Persona creada correctamente, puedes mostrar una notificación o hacer algo más
+          console.log('Persona creada correctamente')
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Persona Creada correctamente',
+            showConfirmButton: false,
+            timer: 1200
+          })
+        } else {
+          // Manejar errores aquí, por ejemplo, mostrar un mensaje de error al usuario
+          console.error('Error al crear persona.')
+        }
+      } catch (error) {
+        console.error('Error al crear persona:', error)
       }
-    } catch (error) {
-      console.error('Error al crear persona:', error)
-      Swal.fire({
-        position: 'top-end',
-        icon: 'Error',
-        title: 'Error al crear Persona',
-        showConfirmButton: false,
-        timer: 1200
-      })
     }
   }
 
@@ -94,7 +118,7 @@ function Form () {
       </div>
       <br />
       <button className="submit" type="submit">
-        Enviar Donacion
+        {isEditing ? 'Actualizar Donación' : 'Enviar Donación'}
       </button>
     </form>
   )
