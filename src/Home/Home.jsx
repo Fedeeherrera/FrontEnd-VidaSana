@@ -26,14 +26,14 @@ function Home () {
       <div className="logros-contenidos">
         <div className='card-contenido'>
           <LogrosContenidos
-            imageUrl='https://wallpapercave.com/wp/wp7532100.jpg'
+            imageUrl='https://www.gaceta.unam.mx/wp-content/uploads/2019/08/190815-aca2-Des-f1-arboles.jpg'
             title="Más árboles, más oxigeno"
             description="Logramos reforestar con más de 2000 nuevos árboles"
           />
         </div>
         <div className='card-contenido'>
           <LogrosContenidos
-            imageUrl='https://www.vidasostenible.org/wp-content/uploads/2019/11/PlayasLimpias2.jpg'
+            imageUrl='https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/01/18183508/limpieza-playas-Vida-Silvestre-2.jpeg'
             title="Playas Limpias"
             description="Junto a Voluntarios logramos limpiar km de playas"
           />
@@ -48,7 +48,7 @@ function Home () {
         <div className='card-contenido'>
           <LogrosContenidos
             imageUrl='https://www.ecologistasenaccion.org/wp-content/uploads/2022/05/activistas-brasil-denuncias-deforestacion.jpg'
-            title="Desforestacion"
+            title="Desforestación"
             description="Protestas ante empresas responsables de la deforestación"
           />
         </div>
