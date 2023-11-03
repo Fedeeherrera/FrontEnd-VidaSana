@@ -10,6 +10,14 @@ import './App.css'
 function App() {
   return (
     <>
+<<<<<<< HEAD
+      <Routes>
+        <Route path='/Login' className="page-container" element={<Login />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/contaminacion' element={<Contaminacion />} />
+        <Route path='/donaciones' element={<Donaciones />} />
+      </Routes>
+=======
     
        <BrowserRouter>
        <Header />
@@ -26,6 +34,7 @@ function App() {
 
         <Footer/>
       </BrowserRouter> 
+>>>>>>> origin
     </>
   )
 }
