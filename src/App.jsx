@@ -9,21 +9,11 @@ import './App.css'
 
 function App() {
   return (
-    <>
-<<<<<<< HEAD
-      <Routes>
-        <Route path='/Login' className="page-container" element={<Login />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/contaminacion' element={<Contaminacion />} />
-        <Route path='/donaciones' element={<Donaciones />} />
-      </Routes>
-=======
-    
+    <>    
        <BrowserRouter>
        <Header />
 
         <Routes>
-
           <Route path='/Home' element={<Home />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/Contaminacion' element={<Contaminacion />} />
@@ -34,7 +24,7 @@ function App() {
 
         <Footer/>
       </BrowserRouter> 
->>>>>>> origin
+
     </>
   )
 }
