@@ -1,6 +1,6 @@
-# Vida Sana - Colaborando para un Mundo Mejor
+# Vida Natural - Colaborando para un Mundo Mejor
 
-¡Bienvenido a la página web de Vida Sana! Somos una organización sin fines de lucro dedicada a la lucha contra la contaminación, inundaciones, el calentamiento global y otros problemas ambientales. A través de nuestra plataforma, puedes hacer donaciones y colaborar con nosotros para crear un mundo más limpio y saludable.
+¡Bienvenido a la página web de Vida Natural! Somos una organización sin fines de lucro dedicada a la lucha contra la contaminación, inundaciones, el calentamiento global y otros problemas ambientales. A través de nuestra plataforma, puedes hacer donaciones y colaborar con nosotros para crear un mundo más limpio y saludable.
 
 ## Acerca de Nosotros
 
@@ -36,7 +36,7 @@ Si te apasiona nuestra causa y deseas contribuir a nuestro proyecto, te invitamo
 
 Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros:
 
-- **Sitio web**: [www.vidasana.org](https://www.vidasana.org)
+- **Sitio web**: [www.vidanatural.org](https://www.vidanatural.org)
 - **Correo electrónico**: info@vidasana.org
 - **Redes Sociales**: Síguenos en [Facebook](https://www.facebook.com/VidaSana) y [Twitter](https://twitter.com/VidaSana)
 
