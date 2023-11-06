@@ -37,8 +37,8 @@ Si te apasiona nuestra causa y deseas contribuir a nuestro proyecto, te invitamo
 Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros:
 
 - **Sitio web**: [www.vidanatural.org](https://www.vidanatural.org)
-- **Correo electrónico**: info@vidasana.org
-- **Redes Sociales**: Síguenos en [Facebook](https://www.facebook.com/VidaSana) y [Twitter](https://twitter.com/VidaSana)
+- **Correo electrónico**: info@vidanatural.org
+- **Redes Sociales**: Síguenos en [Facebook](https://www.facebook.com/VidaNatural) y [Twitter](https://twitter.com/VidaNatural)
 
 ¡Gracias por unirte a Vida Sana en nuestra misión de crear un mundo más limpio y saludable!
 
