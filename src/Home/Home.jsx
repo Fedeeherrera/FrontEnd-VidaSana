@@ -22,46 +22,49 @@ function Home () {
         <p>
           Vida Natural posee tres oficinas, ubicadas en la Ciudad Autónoma de Buenos Aires, Puerto Iguazú y Lago Puelo. Además, cuenta con dos reservas propias: Urugua-í en Misiones, y San Pablo de Valdés, en Chubut.
         </p>
+
       </div>
+      
       <div className="logros-contenidos">
-        <div className='card-contenido'>
-          <LogrosContenidos
-            imageUrl='https://www.gaceta.unam.mx/wp-content/uploads/2019/08/190815-aca2-Des-f1-arboles.jpg'
-            title="Más árboles, más oxigeno"
-            description="Logramos reforestar con más de 2000 nuevos árboles"
-          />
-        </div>
-        <div className='card-contenido'>
-          <LogrosContenidos
-            imageUrl='https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/01/18183508/limpieza-playas-Vida-Silvestre-2.jpeg'
-            title="Playas Limpias"
-            description="Junto a Voluntarios logramos limpiar km de playas"
-          />
-        </div>
-        <div className='card-contenido'>
-          <LogrosContenidos
-            imageUrl='https://www.junin.gob.ar/sites/default/files/noticias/charla_medio_ambiente_en_colegio_san_jose_2.jpg'
-            title="Cuidemos el Agua"
-            description="Campaña de Concientización: Charlas en escuelas "
-          />
-        </div>
-        <div className='card-contenido'>
-          <LogrosContenidos
-            imageUrl='https://www.ecologistasenaccion.org/wp-content/uploads/2022/05/activistas-brasil-denuncias-deforestacion.jpg'
-            title="Desforestación"
-            description="Protestas ante empresas responsables de la deforestación"
-          />
-        </div>
-        <div className='card-contenido'>
-          <LogrosContenidos
-            imageUrl='https://www.mundomarino.com.ar/alpza/images/secciones/fmm12.jpg'
-            title="Cuidando Nuestros Mares"
-            description="Junto a Voluntarios logramos salvar a animales marinos lastimados, siendo devueltos a su habitat natural"
-          />
-        </div>
-      </div>
+  <div className='card-contenido'>
+    <LogrosContenidos
+      imageUrl='https://trinacionalriolempa.org/mtfrl/images/Noticias/08-06-2018/ARBOLES-MIRS-0004.jpg'
+      title="Más árboles, más oxigeno"
+      description="Logramos reforestar con más de 2000 nuevos árboles"
+      
+    />
+  </div>
+
+  <div className='card-contenido'>
+    <LogrosContenidos
+      imageUrl='https://vallartalifestyles.com/wp-content/uploads/2019/09/limpieza-playa_portada.jpg'
+      title="Playas Limpias"
+      description="Junto a Voluntarios logramos limpiar km de playas"
+      
+    />
+  </div>
+
+  <div className='card-contenido'>
+    <LogrosContenidos
+      imageUrl='https://www.ecologistasenaccion.org/wp-content/uploads/2022/05/activistas-brasil-denuncias-deforestacion.jpg'
+      title="Deforestación"
+      description="Protesta ante empresas responsables de la desforestación"
+     
+    />
+  </div>
+
+  <div className='card-contenido'>
+    <LogrosContenidos
+      imageUrl='https://www.mundomarino.com.ar/alpza/images/secciones/fmm12.jpg'
+      title="Cuidando Nuestros Mares"
+      description="Junto a Voluntarios logramos salvar a animales marinos lastimados, siendo devueltos a su habitat natural"
+     
+    />
+</div>
+</div>
+</div>
         
-    </div>
+
     
   )
 };

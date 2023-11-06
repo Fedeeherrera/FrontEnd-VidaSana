@@ -28,7 +28,7 @@
   text-align: justify;
   background-color: #3e885b;
   
-  /*columns:auto 4rem;
+  
   /* Color de fondo para la sección de información */
   padding: 20px;
   border-radius: 5px;
@@ -38,7 +38,7 @@
 .logros-contenidos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 20px;
 }
 /*contendero de las cards*/
@@ -46,30 +46,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30vw;
+  width: calc(25% - 10px);
+
   height: auto;
   border-radius: 10px;
   border: solid 5px white;
   box-shadow: white 2px 3px 3px 3px;
   background-color: rgb(#2F4B26);
   margin: 10px;
+  padding: 10px;
 }
 /*img del componente logros*/
 .card-contenido img {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 95%;
   height: auto;
   border-radius:  10px ;
   margin: 10px;;
-  max-height: 50vh;
+  /*max-height: 50vh;*/
+
 }
 
 
 /*p del componente logros*/
 .card-contenido p {
-  font-size: 1em;
+  font-size: 16px;
   text-align: center;
+  color:#fff;
   
 }
 /*media query para adaptación a pantallas chicas del contenedor de las card, y su h2 e img*/
@@ -81,14 +85,19 @@
   /*h2 del componente logros*/
 
   .card-contenido h2 {
-      font-size: 1em;
+      font-size: 16px;
+      margin-top: 10px;
       text-align: center;
       
   }
-  .card-contenido img{
-    width: 90%;
+  .card-contenido imageUrl{
+    width: 80px;
+    height: 80px; 
   }
-}
+  
+
+  }
+
  
   
 
