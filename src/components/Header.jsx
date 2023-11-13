@@ -9,7 +9,7 @@ function Header () {
       </div>
 
       <div className="navegacion">
-        <ul>
+       <ul>
           <li><a href="http://localhost:5173/Home">Home</a></li>
           <li><a href="http://localhost:5173/Contaminacion">Contaminacion</a></li>
           <li><a href="http://localhost:5173/Donaciones">Donaciones</a></li>
