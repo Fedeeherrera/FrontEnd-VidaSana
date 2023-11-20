@@ -6,14 +6,16 @@ function Contaminacion () {
   return (
     <div className="informacion">
       <div className="titulo-principal">
-        <h1>Problemas Ambientales Urgentes</h1>
+        <h1>Problemas Ambientales Urgentes</h1>        
       </div>
       <ul>
         <li className="problema">
           <h2 className="subtitulo">Cambio Climático</h2>
+          <div className="imagen-container">
+          
            <div>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZf1bwcuw9Dcutu-aKjY5vMGlMEmd6jH9sjw&usqp=CAU"
+                src="./src/contaminacion/imgC/cambioClima.jpeg"
                 alt="Cambio Climático"
                 className="imagen-problema"
               />
@@ -27,12 +29,13 @@ function Contaminacion () {
 
            Un informe del Panel Intergubernamental de Cambio Climático (IPCC) afirma que “el calentamiento desde los niveles preindustriales hasta la década 2006-2015 se estima en 0,87 °C” (IPCC, 2018:51).
           </p>
+        </div>
         </li>
         <li className="problema">
           <h2 className="subtitulo">Deforestación</h2>
           <div className="imagen-container">
             <img
-              src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2022/02/61f9846369440_1200.jpg"
+              src="./src/contaminacion/imgC/deforestacion.jpg"
               alt="Deforestación"
               className="imagen-problema"
             />

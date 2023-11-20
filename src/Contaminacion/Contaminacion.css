@@ -1,41 +1,60 @@
 
 .informacion {
-    background-color: #85bda6;
-    padding: 20px;
-  }
-  
-  .titulo-principal {
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 20px;
-    border: 2px solid #2f4b26; 
-    padding: 10px; 
-  }
-  
-  .subtitulo {
-    font-size: 24px;
-    color: #2f4b26;
-  }
-  
-  .imagen-container {
-    text-align: center;
-  }
-  
-  .imagen-problema {
-    max-width: 50%;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  background-color: #bedcfe;
+  padding: 50px;
+  max-width: 1300px; /* Limita el ancho de la información */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
 
-  .descripcion,
-  .p_desforestacion {
-    text-align: justify;
-    color: #000;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #bedcfe;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+.titulo-principal {
+  text-align: center;
+  font-size: 10px; /* Tamaño del título principal */
+  margin-bottom: 20px;
+  border: 2px solid #2f4b26;
+  padding: 8px;
+  background-color: #3e885b; /* Color de fondo del título principal */
+  color: #fff; /* Color del texto del título principal */
+  font-family: 'Arial', sans-serif; /* Establece la fuente del título */
+}
+
+.subtitulo {
+  font-size: 20px; /* Tamaño del subtitulo */
+  font-family: 'Your-Modern-Font', sans-serif; /* Cambia 'Your-Modern-Font' a la fuente que desees */
+  color: #2f4b26;
+}
+
+.imagen-container {
+  text-align: center;
+}
+ .descripcion {
+  text-align: justify;
+  color: #000;
+  font-family: 'Arial', sans-serif; /* Establece la fuente del párrafo */
+  padding: 25px; /* Ajusta el padding según tus preferencias */
+  background-color: #c0d7bb; /* Color de fondo del párrafo */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Para ajustar al ancho del contenedor */
+ }
+
+.imagen-problema {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 200%; /* Para ajustar al ancho del contenedor */
+  height: 200px; /* Mantiene la proporción original de la imagen */
+  text-align: center;
+}
+
+.p_desforestacion {
+  text-align: justify;
+  color: #000;
+  font-family: 'Arial', sans-serif; /* Establece la fuente del párrafo */
+  padding: 40px; /* Ajusta el padding según tus preferencias */
+  background-color: #c0d7bb; /* Color de fondo del párrafo */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 2500px; /* Para ajustar al ancho del contenedor */
+}
+
