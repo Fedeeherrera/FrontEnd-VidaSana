@@ -1,6 +1,7 @@
 import React from "react";
 import './Login.css'
 import { useState } from 'react';
+import swal from 'sweetalert';
 
 function Login ({setUser}) {
   const [username, setUsername] = useState("")
@@ -8,6 +9,29 @@ function Login ({setUser}) {
   const [password, setPassword] = useState("")
   const [error, setError] = useState(false)
 
+  const mostrarAlert=()=>{
+    if(username === "" || correo === "" || password === "" ){
+      setError(true)
+      swal({
+        title: "Error",
+        text: "Todos los campos deben esta completos",
+        icon: "error",
+        button: "Aceptar"
+      });
+      return 
+    }
+
+    setError(false)
+    swal({
+      title: "Completado",
+      text: "Los datos se ingrasaron con exito",
+      icon: "success",
+      button: "Aceptar"
+    });
+    
+    
+    setUser([username, correo, password])
+  }
 
 
   const handleSubmit = (e) =>{
@@ -20,6 +44,8 @@ function Login ({setUser}) {
 
       setError(false)
       setUser([username, correo, password])
+
+
   }
 
   return (
@@ -41,7 +67,7 @@ function Login ({setUser}) {
             <label>Password</label>
             <input type="password" name="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)}/>
           </div>
-          <button className="button"  >Submit</button>
+          <button className="button"  onClick={()=>mostrarAlert()} >Submit</button>
         {error && <p>Todos los campos son obligatorios</p>}
         </div>
         <p className="text"><small>&copy; 2023 <b>Vida Natural</b></small></p>
