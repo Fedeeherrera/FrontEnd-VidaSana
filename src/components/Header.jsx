@@ -4,7 +4,7 @@ function Header () {
   return (
     <header className="header">
       <div className="logo-container">
-      <a href="http://localhost:5173"><img src={logo} alt="" className='logo' /></a>
+      <a href="http://localhost:5173/Home"><img src={logo} alt="" className='logo' /></a>
       </div>
 
       <div className="navegacion">
@@ -12,7 +12,7 @@ function Header () {
           <li><a href="http://localhost:5173/Home">Home</a></li>
           <li><a href="http://localhost:5173/Contaminacion">Contaminacion</a></li>
           <li><a href="http://localhost:5173/Donaciones">Donaciones</a></li>
-          <li><a href="http://localhost:5173/Login">Login</a></li>
+          <li><a href="http://localhost:5173/">Login</a></li>
         </ul>
       </div>
     </header>
