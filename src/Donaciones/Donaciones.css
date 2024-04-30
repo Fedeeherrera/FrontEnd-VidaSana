@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #679683;
 }
 
@@ -13,10 +14,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20rem;
+  width: 25rem;
   align-self: center;
   border-radius: 1.4rem;
-  padding: 10px;
+  padding: 40px;
+  margin-bottom: 50px;
 }
 
 
@@ -28,8 +30,11 @@
 .input_name,
 .input_donacion,
 .input_mensaje {
-  margin: 15px;
-  height: 20px;
+  margin: 15px 0px;
+  padding: 10px;
+  height: 40px;
+  width: 15rem;
+  font-size: 20px;
 }
 
 .submit {
@@ -52,6 +57,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1200px;
+  padding: 10px;
 }
 
 .card {
@@ -66,13 +73,13 @@ ul {
   height: 550px;
   text-align: center;
   background-color: #4f565e;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 1.5rem;
 }
 
 .card:hover {
-  box-shadow: 8px 12px 10px 8px rgba(0,0,0,0.2);
+  box-shadow: 8px 12px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 .imagen {
@@ -83,6 +90,7 @@ ul {
 
 .h1__donaciones {
   text-align: center;
+  margin: 50px 0;
 }
 
 .button {
@@ -96,9 +104,14 @@ ul {
   height: 60px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%; 
+  }
+}
 
 .button.eliminar {
-  background-color: rgb(255,80, 80);
+  background-color: rgb(255, 80, 80);
   color: black;
   border: 2px solid black;
 }
@@ -107,4 +120,11 @@ ul {
   background-color: #C0D7BB;
   color: black;
   border: 2px solid black;
+}
+
+.h2,
+.h3,
+.h4 {
+  margin: 5px 0;
+  scale: 1.2;
 }
