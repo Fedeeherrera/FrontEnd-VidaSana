@@ -25,7 +25,7 @@ function Donaciones () {
 
   const handleDeleteClick = (id) => {
     // Enviar la solicitud de eliminación al servidor
-    fetch(`http://localhost:3030/personas/${id}`, {
+    fetch(`http://localhost:3000/personas/${id}`, {
       method: 'DELETE'
     })
       .then((response) => {
@@ -70,7 +70,7 @@ function Donaciones () {
   // Función para actualizar la persona
   const handleUpdatePerson = async (updatedPerson) => {
     try {
-      const response = await fetch(`http://localhost:3030/personas/${editingId}`, {
+      const response = await fetch(`http://localhost:3000/personas/${editingId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
