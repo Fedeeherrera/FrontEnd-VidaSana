@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.piePagina{
+.piePagina {
     width: 100%;
-    background-color:#2F4B26 ;
-    
+    background-color: rgb(50, 138, 0);
+
 }
 
 .piePagina .grupo1 {
@@ -18,11 +18,10 @@
     grid-template-columns: repeat(3, 1fr);
     display: grid;
     grid-gap: 50px;
-    padding: 45px 0px;
-
+    padding: 20px 0 5px 0 ;
 }
 
-.piePagina .grupo1 .box figure{
+.piePagina .grupo1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
@@ -31,27 +30,29 @@
 
 }
 
-.piePagina .grupo1 .box figure img{
+.piePagina .grupo1 .box figure img {
     width: 250px;
 
 }
-.piePagina .grupo1 .box h2{
+
+.piePagina .grupo1 .box h2 {
     color: white;
     margin-bottom: 25px;
     font-size: 20 px;
 
 }
+
 .piePagina .grupo1 .box p {
     color: white;
     margin-bottom: 10px;
 
 }
 
-.piePagina .grupo1 .redesSociales a:hover{
+.piePagina .grupo1 .redesSociales a:hover {
     color: #2F4B26;
 }
 
-.piePagina .grupo2{
+.piePagina .grupo2 {
     background-color: #000000;
     padding: 15px 10px;
     text-align: center;
@@ -59,29 +60,27 @@
 
 }
 
-.piePagina .grupo2 small{
+.piePagina .grupo2 small {
     font-size: 15px;
 
 }
 
 .box2 {
-    background-color: #2F4B26; 
     padding: 20px;
-    text-align: center; 
-  }
-  
-  .redesSociales {
+    text-align: center;
+}
+
+.redesSociales {
     display: flex;
-    justify-content: flex-end; 
-  }
-  
-  .redesSociales a {
-    margin-left: 10px; 
-    text-decoration: none; 
-  }
-  
-  .redesSociales img {
-    width: 30px; 
-    height: auto; 
-  }
-  
+    justify-content: flex-end;
+}
+
+.redesSociales a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.redesSociales img {
+    width: 30px;
+    height: auto;
+}
