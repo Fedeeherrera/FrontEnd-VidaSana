@@ -6,7 +6,7 @@ import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
 function Donaciones () {
-  const URL = 'http://localhost:3030/personas'
+  const URL = 'http://localhost:3000/personas'
   const [data, setData] = useState([])
   const [editingId, setEditingId] = useState(null)
 
@@ -19,6 +19,7 @@ function Donaciones () {
 
   useEffect(() => {
     fetchData()
+    console.log(data)
     console.log('Renderizado Completado')
   }, [])
 
@@ -102,11 +103,12 @@ function Donaciones () {
       <Form className="form" updatePerson={handleUpdatePerson} editingId={editingId} />
       <ul className="ul">
         {data.map((persona) => (
-          <li className="card" key={persona.id}>
+          <li className="card" key={persona.idPersona}>
             <Imagenn />
-            <h2 className="h2">{persona.nombreApellido}</h2>
-            <h3 className="h3">${persona.donacion}</h3>
-            <h4 className="h4">{persona.mensaje}</h4>
+            <h2 className="h2">{persona.NombreApellido}</h2>
+            <h3 className="h3">${persona.donaciones[0].monto}</h3>
+            <h3 className="h3">{persona.donaciones[0].fechaDonacion}</h3>
+            <h4 className="h4">{persona.mensaje[0].mensaje}</h4>
             <div>
               <button
                 className="button editar"

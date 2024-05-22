@@ -10,18 +10,14 @@ import './App.css'
 function App () {
   return (
     <>
-
        <BrowserRouter>
        <Header />
-
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/Home' element={<Home />} />
           <Route path='/Contaminacion' element={<Contaminacion />} />
           <Route path='/Donaciones' element={<Donaciones />} />
-
         </Routes>
-
         <Footer/>
       </BrowserRouter>
     </>
