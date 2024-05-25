@@ -99,7 +99,6 @@ function Donaciones () {
 
   return (
     <div className="container">
-      <h1 className='h1__donaciones'>Donaciones</h1>
       <Form className="form" updatePerson={handleUpdatePerson} editingId={editingId} />
       <ul className="ul">
         {data.map((persona) => (

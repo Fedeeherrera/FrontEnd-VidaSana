@@ -16,9 +16,11 @@
   align-items: center;
   width: 25rem;
   align-self: center;
-  border-radius: 1.4rem;
-  padding: 40px;
+  border-radius: 20px;
+  margin-top: 80px;
+  padding: 0 40px 40px 40px;
   margin-bottom: 50px;
+  background-color: #FFF;
 }
 
 
@@ -35,8 +37,11 @@
   height: 40px;
   width: 17rem;
   font-size: 20px;
-  background-color: white;
+  background-color: #EAEAEA;
   color: black;
+
+  border-radius: 6px;
+
 }
 
 .submit {
@@ -108,9 +113,16 @@ ul {
   height: 60px;
 }
 
+
+.labelMensaje,
+.labelNombreApellido,
+.labelDonacion {
+  color: black;
+}
+
 @media (min-width: 768px) {
   .container {
-    max-width: 100%; 
+    max-width: 100%;
   }
 }
 
@@ -132,3 +144,77 @@ ul {
   margin: 5px 0;
   scale: 1.2;
 }
+
+
+/*
+.text{
+    color: rgb(50, 138, 0);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.underline{
+    width: 61px;
+    height: 6px;
+    background-color: rgb(50, 138, 0);
+    border-radius: 9px;
+}
+
+.inputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 440px;
+    height: 60px;
+    background-color: #eaeaea;
+    border-radius: 6px;
+
+}
+
+
+.imgLogin{
+    height: 20px; 
+    width: 20px;
+    margin: 0 30px;
+    
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 15px;
+}
+
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    background-color: rgb(50, 138, 0);
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+*/
