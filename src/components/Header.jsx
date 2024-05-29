@@ -1,18 +1,19 @@
-import './Header.css'
+import { Link } from 'react-router-dom'
 import logo from './img/logoPropio.png'
+import './Header.css'
 function Header () {
   return (
     <header className="header">
       <div className="logo-container">
-      <a href="http://localhost:5173/Home"><img src={logo} alt="" className='logo' /></a>
+      <Link to="/Home"><img src={logo} alt="Logo" className='logo header_a' /></Link>
       </div>
 
       <div className="navegacion">
         <ul>
-          <li><a href="http://localhost:5173/Home">Home</a></li>
-          <li><a href="http://localhost:5173/Contaminacion">Contaminacion</a></li>
-          <li><a href="http://localhost:5173/Donaciones">Donaciones</a></li>
-          <li><a href="http://localhost:5173/">Login</a></li>
+          <li><Link className='header_a' to="/Home">Home</Link></li>
+          <li><Link className='header_a' to="/Contaminacion">Contaminacion</Link></li>
+          <li><Link className='header_a' to="/Donaciones">Donaciones</Link></li>
+          <li><Link className='header_a' to="/">Login</Link></li>
         </ul>
       </div>
     </header>
