@@ -1,28 +1,26 @@
-import React from "react";
-import MiHeader from "../components/Header";
-import './Login.css';
+import React from 'react'
+import './Login.css'
 function Login () {
   return (
     <div className="login">
 
-   
         <div className="containerLogin">
           <div className="tituloForm">
               <div className="text">Sign Up</div>
               <div className="underline"></div>
           </div>
-            
+
             <div className="inputs">
               <div className="input">
                 <img src="./src/Login/user.png" alt="" className="imgLogin"/>
-                <input type="text" placeholder="Nombre y Apellido"/>
+                <input type="text" placeholder="Nombre de Usuario"/>
               </div>
             </div>
 
             <div className="inputs">
               <div className="input">
               <img src="./src/Login/email.png" alt="" className="imgLogin" />
-                
+
                 <input type="email" placeholder="Ingrese Email"/>
               </div>
             </div>
@@ -43,5 +41,3 @@ function Login () {
 }
 
 export default Login
-
-
