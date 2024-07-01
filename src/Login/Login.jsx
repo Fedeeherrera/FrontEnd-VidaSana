@@ -1,58 +1,53 @@
-import React from "react";
+import React, { useState } from 'react'
 import './Login.css'
-import { useState } from 'react';
-import swal from 'sweetalert';
 
-function Login ({setUser}) {
-  const [username, setUsername] = useState("")
-  const [correo, setCorreo] = useState("")
-  const [password, setPassword] = useState("")
+import swal from 'sweetalert'
+
+function Login ({ setUser }) {
+  const [username, setUsername] = useState('')
+  const [correo, setCorreo] = useState('')
+  const [password, setPassword] = useState('')
   const [error, setError] = useState(false)
 
-  const mostrarAlert=()=>{
-    if(username === "" || correo === "" || password === "" ){
+  const mostrarAlert = () => {
+    if (username === '' || correo === '' || password === '') {
       setError(true)
       swal({
-        title: "Error",
-        text: "Todos los campos deben esta completos",
-        icon: "error",
-        button: "Aceptar"
-      });
-      return 
+        title: 'Error',
+        text: 'Todos los campos deben esta completos',
+        icon: 'error',
+        button: 'Aceptar'
+      })
+      return
     }
 
     setError(false)
     swal({
-      title: "Completado",
-      text: "Los datos se ingrasaron con exito",
-      icon: "success",
-      button: "Aceptar"
-    });
-    
-    
+      title: 'Completado',
+      text: 'Los datos se ingrasaron con exito',
+      icon: 'success',
+      button: 'Aceptar'
+    })
+
     setUser([username, correo, password])
   }
 
-
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     e.preventDefault()
 
-      if(username === "" || correo === "" || password === "" ){
-        setError(true)
-        return 
-      }
+    if (username === '' || correo === '' || password === '') {
+      setError(true)
+      return
+    }
 
-      setError(false)
-      setUser([username, correo, password])
-
-
+    setError(false)
+    setUser([username, correo, password])
   }
 
   return (
 <div className="container">
         <form onSubmit={handleSubmit}>
 
-      
         <div className="form">
         <h2>Login Form</h2>
           <div className="campo">
@@ -67,16 +62,13 @@ function Login ({setUser}) {
             <label>Password</label>
             <input type="password" name="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)}/>
           </div>
-          <button className="button"  onClick={()=>mostrarAlert()} >Submit</button>
+          <button className="button" onClick={() => mostrarAlert()} >Submit</button>
         {error && <p>Todos los campos son obligatorios</p>}
         </div>
         <p className="text"><small>&copy; 2023 <b>Vida Natural</b></small></p>
         </form>
       </div>
-          
 
-
-     
   )
 }
 
