@@ -1,6 +1,6 @@
-//import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import logo from './img/logoPropio.png'
 import './Header.css'
-import React from 'react'
 function Header () {
   return (
   <>
@@ -19,7 +19,6 @@ function Header () {
     </div>
   </div>
   </>
-
   )
 }
 export default Header

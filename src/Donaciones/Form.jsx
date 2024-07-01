@@ -81,7 +81,9 @@ function Form ({ updatePerson, editingId }) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="div_nombre">
-        <label htmlFor="nombreApellido">Nombre y Apellido</label> <br />
+      <h1 className='h1__donaciones tituloForm text'>Donaciones</h1>
+
+        <label className='labelNombreApellido' htmlFor="nombreApellido">Nombre y Apellido</label> <br />
         <input
           className="input_name"
           type="text"
@@ -93,7 +95,7 @@ function Form ({ updatePerson, editingId }) {
         />
       </div>
       <div className="div_donacion">
-        <label htmlFor="donacion">Donacion</label> <br />
+        <label className='labelDonacion' htmlFor="donacion">Donacion</label> <br />
         <input
           className="input_donacion"
           type="text"
@@ -105,7 +107,7 @@ function Form ({ updatePerson, editingId }) {
         />
       </div>
       <div className="div_mensaje">
-        <label htmlFor="mensaje">Mensaje</label> <br />
+        <label className='labelMensaje' htmlFor="mensaje">Mensaje</label> <br />
         <input
           className="input_mensaje"
           type="text"

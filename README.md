@@ -4,11 +4,11 @@
 
 ## Acerca de Nosotros
 
-En Vida Natural, creemos en un futuro sostenible y en la importancia de proteger nuestro planeta para las generaciones futuras. Nuestra misión es concienciar sobre los problemas ambientales y tomar medidas concretas para abordarlos. Trabajamos en estrecha colaboración con comunidades locales, expertos en medio ambiente y gobiernos para lograr un impacto positivo.
+En Vida Sana, creemos en un futuro sostenible y en la importancia de proteger nuestro planeta para las generaciones futuras. Nuestra misión es concienciar sobre los problemas ambientales y tomar medidas concretas para abordarlos. Trabajamos en estrecha colaboración con comunidades locales, expertos en medio ambiente y gobiernos para lograr un impacto positivo.
 
 ## Cómo Colaborar
 
-Puedes colaborar con Vida Natural  de varias maneras:
+Puedes colaborar con Vida Sana de varias maneras:
 
 1. **Donaciones**: Tus donaciones nos permiten llevar a cabo proyectos de conservación y sostenibilidad. Cada contribución cuenta y hace una diferencia en la lucha contra el cambio climático y la contaminación.
 
@@ -47,3 +47,4 @@ Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con noso
 60 : #679683
 30 : #4f565e
 10 : #C0D7BB
+"# VidaNatural_FrontEnd" 

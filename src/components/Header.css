@@ -24,6 +24,29 @@
     top: 0;
     left: 0;
     right: 0;
+
+.header {
+    color: white;
+    background-color: rgb(50, 138, 0);
+    height: 130px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.header_a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
+
+.logo-container {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,14 +74,45 @@
     font-size: 18px;
    
     color:rgb(255, 255, 255);
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.navegacion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegacion ul li {
+    display: inline-block;
+}
+
+.navegacion ul li a {
+
     display: block;
     padding: 0.5rem 1rem;
     transition: all 0.4s linear;
     border-radius: 5px;
     
 }
+  
 .menuNav ul li a:hover{
     color:  #3e885b;
     animation-delay: 3ms;
     
+
+
+.navegacion ul li a:hover {
+    background: #bedcfe6b;
+    color: #2F4B26;
+}
+
+.logo {
+    font-size: 1.3em;
+    animation: none;
+
 }
