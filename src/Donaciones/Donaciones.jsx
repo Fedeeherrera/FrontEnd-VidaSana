@@ -5,8 +5,8 @@ import './Donaciones.css'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
-function Donaciones() {
-  const URL = 'http://localhost:3000/personas'
+function Donaciones () {
+  const URL = 'http://localhost:3000/persona'
   const [data, setData] = useState([])
   const [editingId, setEditingId] = useState(null)
 
@@ -104,10 +104,9 @@ function Donaciones() {
         {data.map((persona) => (
           <li className="card" key={persona.idPersona}>
             <Imagenn />
-            <h2 className="h2">{persona.NombreApellido}</h2>
-            <h3 className="h3">${persona.donaciones[0].monto}</h3>
-            <h3 className="h3">{persona.donaciones[0].fechaDonacion}</h3>
-            <h4 className="h4">{persona.mensaje[0].mensaje}</h4>
+            <h2 className="h2">{persona.nombreApellido}</h2>
+            <h3 className="h3">${persona.donaciones}</h3>
+            <h4 className="h4">{persona.mensaje}</h4>
             <div>
               <button
                 className="button editar"
