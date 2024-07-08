@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
-function Form ({ updatePerson, editingId }) {
+function Form({ updatePerson, editingId }) {
   const [formData, setFormData] = useState({
     nombreApellido: '',
     donacion: '',
@@ -81,7 +81,7 @@ function Form ({ updatePerson, editingId }) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="div_nombre">
-      <h1 className='h1__donaciones tituloForm text'>Donaciones</h1>
+        <h1 className='h1__donaciones tituloForm text'>Donaciones</h1>
 
         <label className='labelNombreApellido' htmlFor="nombreApellido">Nombre y Apellido</label> <br />
         <input

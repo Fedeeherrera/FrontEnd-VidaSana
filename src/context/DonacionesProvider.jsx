@@ -8,7 +8,7 @@ const DonacionesProvider = ({ children }) => {
       value={{
       }}
     >
-      {children}
+      {children} 
     </DonacionesContext.Provider>
   )
 }

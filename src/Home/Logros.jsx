@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LogrosContenidos = ({ title, description, imageUrl }) => {
   return (
     <div className="logros-contenidos">

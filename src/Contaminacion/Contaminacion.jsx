@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contaminacion.css'
 
-function Contaminacion () {
+function Contaminacion() {
   return (
     <div className="informacion">
       <div className="titulo-principal">

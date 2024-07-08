@@ -5,7 +5,7 @@ import './Donaciones.css'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
-function Donaciones () {
+function Donaciones() {
   const URL = 'http://localhost:3000/personas'
   const [data, setData] = useState([])
   const [editingId, setEditingId] = useState(null)

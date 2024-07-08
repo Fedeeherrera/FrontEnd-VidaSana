@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-function Imagenn () {
+function Imagenn() {
   const [picture, setPicture] = useState(null)
 
   useEffect(() => {
@@ -21,11 +21,11 @@ function Imagenn () {
     <div>
       {picture
         ? (
-        <img className='imagen' src={picture} alt="Imagen de usuario" />
-          )
+          <img className='imagen' src={picture} alt="Imagen de usuario" />
+        )
         : (
-        <p>Cargando imagen...</p>
-          )}
+          <p>Cargando imagen...</p>
+        )}
     </div>
   )
 }

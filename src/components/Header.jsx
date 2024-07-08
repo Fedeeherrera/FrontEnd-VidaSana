@@ -3,24 +3,21 @@ import logo from './img/logoPropio.png'
 import './Header.css'
 function Header () {
   return (
-  <>
-  <div className="back">
-    <div className="menu-contenedor">
-    <a href="#" className='logo'><img src="./src/components/img/logoPropio.png" alt="LogoVidaNatural" /></a>
-    <div className="menuNav">
-      <ul>
-      <li><a href="http://localhost:5173/Home">Home</a></li>
-      <li><a href="http://localhost:5173/Contaminacion">Contaminacion</a></li>
-      <li><a href="http://localhost:5173/Donaciones">Donaciones</a></li>
-      <li><a href="http://localhost:5173/Login">Login</a></li>
-      </ul>
-    </div>
+    <header className="header">
+      <div className="logo-container">
+      <Link to="/Home"><img src={logo} alt="Logo" className='logo header_a' /></Link>
+      </div>
 
-    </div>
-  </div>
-  </>
+      <div className="navegacion">
+        <ul>
+          <li><Link className='header_a' to="/Home">Home</Link></li>
+          <li><Link className='header_a' to="/Contaminacion">Contaminacion</Link></li>
+          <li><Link className='header_a' to="/Donaciones">Donaciones</Link></li>
+          <li><Link className='header_a' to="/">Login</Link></li>
+        </ul>
+      </div>
+    </header>
+
   )
 }
 export default Header
-
-
