@@ -25,7 +25,7 @@ function Donaciones () {
 
   const handleDeleteClick = (id) => {
     // Enviar la solicitud de eliminación al servidor
-    fetch(`http://localhost:3000/personas/${id}`, {
+    fetch(`http://localhost:3000/persona/${id}`, {
       method: 'DELETE'
     })
       .then((response) => {
@@ -70,7 +70,7 @@ function Donaciones () {
   // Función para actualizar la persona
   const handleUpdatePerson = async (updatedPerson) => {
     try {
-      const response = await fetch(`http://localhost:3000/personas/${editingId}`, {
+      const response = await fetch(`http://localhost:3000/persona/${editingId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -101,29 +101,42 @@ function Donaciones () {
     <div className="container">
       <Form className="form" updatePerson={handleUpdatePerson} editingId={editingId} />
       <ul className="ul">
-        {data.map((persona) => (
-          <li className="card" key={persona.idPersona}>
-            <Imagenn />
-            <h2 className="h2">{persona.nombreApellido}</h2>
-            <h3 className="h3">${persona.donaciones}</h3>
-            <h4 className="h4">{persona.mensaje}</h4>
-            <div>
-              <button
-                className="button editar"
-                onClick={() => handleEditClick(persona.id)}
-              >
-                Editar
-              </button>
-              <button
-                className="button eliminar"
-                onClick={() => handleDeleteClick(persona.id)}
-              >
-                Eliminar
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
+  {data.map((persona) => {
+    // Obtener la última donación y mensaje
+    const ultimaDonacion = persona.donaciones.length > 0 ? persona.donaciones[persona.donaciones.length - 1] : null
+    const ultimoMensaje = persona.mensaje.length > 0 ? persona.mensaje[persona.mensaje.length - 1] : null
+    const longitudDonaciones = persona.donaciones.length
+
+    return (
+      <li className="card" key={persona.idPersona}>
+        <Imagenn />
+        <h2 className="h2">{persona.nombreApellido}</h2>
+        <h2>{longitudDonaciones > 0 ? 'Esta persona dono ' + longitudDonaciones : ''}</h2>
+        <h3 className="h3">
+          {ultimaDonacion ? `$${ultimaDonacion.monto}` : 'Sin donaciones'}
+        </h3>
+        <h4 className="h4">
+          {ultimoMensaje ? ultimoMensaje.mensaje : 'Sin mensaje'}
+        </h4>
+        <div>
+          <button
+            className="button editar"
+            onClick={() => handleEditClick(persona.idPersona)}
+          >
+            Editar
+          </button>
+          <button
+            className="button eliminar"
+            onClick={() => handleDeleteClick(persona.idPersona)}
+          >
+            Eliminar
+          </button>
+        </div>
+      </li>
+    )
+  })}
+</ul>
+
     </div>
   )
 }
