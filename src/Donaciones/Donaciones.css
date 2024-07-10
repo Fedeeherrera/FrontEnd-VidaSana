@@ -100,7 +100,26 @@ ul {
   text-align: center;
   margin: 50px 0;
   font-weight: bold;
+  color: black;
 }
+
+.multiplicador_donaciones {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid #ccc;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 
 .button {
   font-family: monospace;

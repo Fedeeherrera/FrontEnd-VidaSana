@@ -10,9 +10,9 @@ function Header () {
 
       <div className="navegacion">
         <ul>
-          <li><Link className='header_a' to="/Home">Home</Link></li>
-          <li><Link className='header_a' to="/Contaminacion">Contaminacion</Link></li>
-          <li><Link className='header_a' to="/Donaciones">Donaciones</Link></li>
+          <li><Link className='header_a' to="/home">Home</Link></li>
+          <li><Link className='header_a' to="/contaminacion">Contaminacion</Link></li>
+          <li><Link className='header_a' to="/donaciones">Donaciones</Link></li>
           <li><Link className='header_a' to="/">Login</Link></li>
         </ul>
       </div>
