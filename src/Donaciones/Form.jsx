@@ -16,7 +16,7 @@ function Form ({ updatePerson, editingId }) {
       setIsEditing(true)
       // Obtener los datos de la persona que se está editando
       // y llenar el formulario con esos datos
-      fetch(`http://localhost:3030/personas/${editingId}`)
+      fetch(`http://localhost:3000/persona/${editingId}`)
         .then(response => response.json())
         .then(data => {
           setFormData(data)
@@ -50,7 +50,7 @@ function Form ({ updatePerson, editingId }) {
     } else {
       // Si no estamos en modo de edición, agregamos una nueva persona
       try {
-        const response = await fetch('http://localhost:3030/personas', {
+        const response = await fetch('http://localhost:3000/persona', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
